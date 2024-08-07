@@ -1,96 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto";
-    flex-direction: column;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+  font-family: "Roboto";
+  flex-direction: column;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #14163c;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
-.progress-variables{
-    display: flex;
-    position: relative;
-    gap: 25px;
+.progress-variables {
+  display: flex;
+  position: relative;
+  gap: 25px;
 }
 
-.buttons{
-    gap: 10%;
-    display: flex;
-    justify-content: center;
+.buttons {
+  gap: 10%;
+  display: flex;
+  justify-content: center;
 }
 
-.circle{
-    width: 40px;
-    height: 40px;
-    background-color: rgb(171, 171, 171);
-    border: 2px solid rgb(134, 134, 134);
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(226, 226, 226);
-    
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(171, 171, 171);
+  border: 2px solid rgb(134, 134, 134);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(226, 226, 226);
 }
 
-.button{
-    border-radius: 100%;
-    background-color: rgb(101, 101, 255);
-    width: 50px;
-    height: 50px;
-    border: 2px solid rgb(70, 70, 255);
-    color: white;
-    font-size: 18px;
+.button {
+  border-radius: 100%;
+  background-color: #8585e4;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: white;
 
+  font-size: 30px;
 }
 
-.button:active{
-    transition: ease-in-out 0.05s;
-    transform: scale(0.9);
-
+.button:active {
+  transition: ease-in-out 0.05s;
+  transform: scale(0.9);
 }
 
-.bar{
-    background-color: rgb(107, 107, 253);
-    width: 0%;
-    height: 10%;
-    top: 50%;
-    z-index: -1;
-    position: absolute;
-    transition: ease-in-out 0.5s;
+.bar {
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+
+  width: 0%;
+  height: 10%;
+  background-color: rgb(107, 107, 253);
+  transition: ease-in-out 0.5s;
 }
 
-.active{
-    background-color: rgb(118, 118, 255);
-    border: 3px solid blue;
-    color: white;
-    transition: ease-in-out 0.25s;
+.active {
+  background-color: rgb(118, 118, 255);
+  border: none;
+  color: white;
+  transition: ease-in-out 0.25s;
 }
 
-.complete{
-    background-color: rgb(161, 161, 255);
-    border: 2px solid rgb(59, 59, 248);
-    color: white;
+.complete {
+  background-color: rgb(161, 161, 255);
+  border: none;
+  color: white;
 }
 
-.bar-holder{
-    background-color: rgb(178, 178, 178);
-    width: 100%;
-    height: 10%;
-    top: 50%;
-    z-index: -2;
-    position: absolute;
+.bar-holder {
+  background-color: rgb(178, 178, 178);
+  width: 100%;
+  height: 10%;
+  top: 50%;
+  z-index: -2;
+  position: absolute;
 }
